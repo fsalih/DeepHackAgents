@@ -1,10 +1,12 @@
 import streamlit as st
-import final_test
+# import final_test
+import llama3
+# import echo
 
 
 def answer(question):
     # anything
-    return final_test.agent(question)
+    return llama3.answer(question)
 
 
 st.title("Deep Hack Winners (DHW) Bot")
@@ -30,5 +32,8 @@ if prompt := st.chat_input("What is up?"):
         st.markdown(response)
         st.session_state.messages.append({"role": "assistant", "content": response})
 
-#  command for run:
+#  command to run:
 #  streamlit run \path\main.py
+
+# or
+# streamlit run main.py

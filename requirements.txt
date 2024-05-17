@@ -1,4 +1,1 @@
 streamlit
-langchain
-chromadb
-gigachat
